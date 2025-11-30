@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th>
+                Student ID
+            </th>
+            <th>
+                Student Name
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Age
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1234
+                </td>
+                <td>Gill</td>
+                <td>Male</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>1235</td>
+                <td>Raunak</td>
+                <td>Male</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2345</td>
+                <td>Rupa</td>
+                <td>Female</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>3045</td>
+                <td>Rupali singh</td>
+                <td>Male</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--rowspan + colspan-->
+    <br>
+    <table border="1">
+        <thead>
+            <th>
+                Student ID
+            </th>
+            <th>
+                Student Name
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Age
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1234
+                </td>
+                <td colspan = "2">Gill</td>
+                <td rowspan ="4" >17</td>
+            </tr>
+            <tr>
+                <td>1235</td>
+                <td>Raunak</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>2345</td>
+                <td>Rupa</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>3045</td>
+                <td>Rupali singh</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

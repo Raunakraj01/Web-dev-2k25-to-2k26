@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Project2</title>
+  </head>
+  <body>
+    <h1>Job Application</h1>
+
+    <!--Application Form-->
+    <form>
+      <!--Name-->
+      <label for="name">Name:</label><br />
+      <input type="text" name="name" id="name" /><br /><br />
+      <!--Email-->
+      <label for="email">Email:</label><br />
+      <input type="email" name="email" id="email" /><br /><br />
+
+      <!--Phone-->
+      <label for="phone">Phone:</label><br />
+      <input type="tel" name="phone" id="phone" /><br /><br />
+
+      <!--Resume-->
+      <label for="resume">Resume:</label><br />
+      <input type="file" name="file" id="resume" /><br /><br />
+
+      <!--Expereince-->
+      <label for="Experience">Expreince(Years):</label><br />
+      <input name="Experience" type="Number" min="0" max="100" value="4" id="Experience" /><br /><br />
+      <!-- <label for="Experience">Expreince(Years):</label><br />
+      <input name="Experience" type="range" min="0" max="10" value="4" id="Experience" /><br /><br /> -->
+
+      <!--Skills-->
+      <fieldset>
+        <legend>Skills:</legend>
+        <input id="Html" name="skill" type="checkbox" value="HTML"/><br/>
+        <label for="Html">Html</label><br/>
+        <input id="css" name="skill" type="checkbox" value="css"/><br/>
+        <label for="css">css</label><br/>
+        <input id="JavaScript" name="skill" type="checkbox" value="JavaScript"/><br/>
+        <label for="JavaScript">JavaScript</label><br/>
+      </fieldset>
+
+      <!--Education-->
+      <label for="Education">Highest Education:</label><br/>
+      <select name="Education" id="Education">
+        <option>High School</option>
+        <option>Graduated</option>
+        <option>Post Graduate</option>
+      </select><br/>
+
+      <!--Availability-->
+      <label>Availability:</label><br/>
+      <input type="radio" name="Availability" id="FullTime" value="Fulltime"/><br/>
+      <label for="FullTime">Full time</label><br/><br/>
+      <input type="radio" name="Availability" id="PartTime" value="PartTime"/><br/>
+      <label for="PartTime">Part time</label><br/><br/>
+
+      <!--Additional Comments: TextArea-->
+      <label for="comment">Additional Comments:</label><br/>
+      <textarea placeholder="please Enter Your Thoughts" cols="40" rows="3" type="text" name="comment" id="comment"></textarea><br/><br/>
+
+      <!--Submit button-->
+      <input type="submit" value="Apply"/>
+    </form>
+  </body>
+</html>

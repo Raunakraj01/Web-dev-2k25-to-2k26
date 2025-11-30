@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Project3</title>
+  </head>
+  <body>
+    <h1>Complex Form</h1>
+    <form>
+      <!-- Personal information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input name="Name" type="text" id="name" />
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input name="email" type="email" id="email" />
+        <!-- Phone -->
+        <label for="phone">phone</label>
+        <input name="phone" type="tel" id="phone" />
+        <!-- date -->
+        <label for="Date">Date</label>
+        <input name="Date" type="date" id="Date" />
+        <!-- Gender -->
+         <span>Gender</span>
+        <!-- <p>Gender</p> this takes everythin on new line -->
+        <!-- <label>Gender</label> -->
+        <!-- Male -->
+        <input name="gender" id="Male" value="male" type="radio" />
+        <label for="Male">Male</label>
+        <!-- Female -->
+        <input name="gender" id="Female" value="Female" type="radio" />
+        <label for="Female">Female</label>
+        <!-- other -->
+        <input name="gender" id="other" value="other" type="radio" />
+        <label for="other">other</label><br />
+        <!-- Country -->
+        <label for="Country">Country</label>
+        <select name="Country" id="Country">
+          <option value="India">India</option>
+          <option value="South Africa">South Africa</option>
+          <option value="Russia">Russia</option>
+          <option value="Brazil">Brazil</option>
+        </select>
+      </fieldset>
+      <!-- Address Street -->
+      <fieldset>
+        <legend>Address</legend>
+        <!-- street -->
+        <label for="street">Street</label>
+        <input id="street" type="text" name="street" />
+        <!-- city -->
+        <label for="city">city</label>
+        <input id="city" type="text" name="city" />
+        <!-- zip code -->
+        <label for="Zipcode">Zip code</label>
+        <input id="Zipcode" type="text" name="zipcode" />
+      </fieldset>
+
+      <!-- Other Information -->
+      <fieldset>
+        <legend>other information</legend>
+        <label for="Comments">Comments</label>
+        <textarea
+          placeholder="Please Eneter your thoughts"
+          name="Comments"
+          id="Comments"
+        ></textarea>
+
+        <!-- Terms and condition agreement button -->
+        <label for="checkbox">I agree to the terms of service</label>
+        <input id="checkbox" type="checkbox" name="terms"/>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
